@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer {
+  .align-element {
+    @apply max-w-6xl mx-auto p-4;
+  }
+}
+
+.crt-wr a {
+  display: inline-flex;
+  flex-shrink: 0;
+  cursor: pointer;
+  user-select: none;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  transition-duration: 200ms;
+  border: 2px solid;
+  border-radius: var(--rounded-btn, 0.5rem);
+  height: 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  min-height: 3rem;
+  font-size: 0.875rem;
+  line-height: 1em;
+  gap: 0.5rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-decoration-line: none;
+  animation: button-pop var(--animation-btn, 0.25s) ease-out;
+  text-transform: var(--btn-text-case, uppercase);
+}
+
+button {
+  display: inline-flex;
+  flex-shrink: 0;
+  cursor: pointer;
+  user-select: none;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  transition-duration: 200ms;
+  border: 2px solid;
+  border-radius: var(--rounded-btn, 0.5rem);
+  height: 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  min-height: 3rem;
+  font-size: 0.875rem;
+  line-height: 1em;
+  gap: 0.5rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-decoration-line: none;
+  animation: button-pop var(--animation-btn, 0.25s) ease-out;
+  text-transform: var(--btn-text-case, uppercase);
+}
+
+.breadcrumbs {
+  max-width: 1200px;
+  margin: 20px auto;
+}
+.breadcrumbs > * {
+  display: inline-block;
+  margin-right: 10px;
+}
+.breadcrumbs .crumb:after {
+  content: ">";
+  margin-left: 10px;
+}
+.breadcrumbs .crumb:last-child:after {
+  display: none;
+}
+.breadcrumbs .crumb a {
+  color: #ddd;
+}
+
+/* asdfkasjfkahsdkjfhkajshdflhasdjkfhakjsdhf error */
+.page_404 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  padding: 40px 0;
+  background: #fff;
+  font-family: "Arvo", serif;
+}
+
+.page_404 img {
+  width: 100%;
+}
+
+.four_zero_four_bg {
+  background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+  height: 400px;
+  background-position: center;
+}
+
+.four_zero_four_bg h1 {
+  font-size: 120px;
+  font-family: monospace;
+}
+
+.four_zero_four_bg h3 {
+  font-family: monospace;
+  font-size: 80px;
+}
+
+.link_404 {
+  color: #fff !important;
+  padding: 10px 20px;
+  background: #39ac31;
+  border-radius: 2px;
+  margin: 20px 0;
+  display: inline-block;
+  font-family: monospace;
+}
+.contant_box_404 {
+  margin-top: -50px;
+
+  font-family: monospace;
+}
